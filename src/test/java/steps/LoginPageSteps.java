@@ -35,7 +35,7 @@ public class LoginPageSteps {
                 Assert.assertTrue(loginPage.isSuccessMessageDisplayed(), "Message about a successful login is not displayed");
                 break;
             case FAILURE:
-                Assert.assertFalse(loginPage.isFailureMessageDisplayed(), "Message about an unsuccessful login is not displayed");
+                Assert.assertTrue(loginPage.isFailureMessageDisplayed(), "Message about an unsuccessful login is not displayed");
                 break;
         }
     }

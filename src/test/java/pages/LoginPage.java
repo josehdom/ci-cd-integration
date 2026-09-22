@@ -9,7 +9,7 @@ public class LoginPage extends BasePage{
     private final By passwordInput = By.id("password");
     private final By loginButton = By.xpath("//i[contains(@class, 'fa-sign-in')]");
     private final By successfulLoginMessage = By.xpath(String.format(XpathTemplates.PARTICULAR_TEXT_XPATH, "You logged into a secure area!"));
-    private final By unsuccessfulLoginMessage = By.xpath(String.format(XpathTemplates.PARTICULAR_TEXT_XPATH, "Your username is invalid!"));
+    private final By unsuccessfulLoginMessage = By.cssSelector("#flash.error");
 
     public LoginPage (){
         super(By.id("username"));
